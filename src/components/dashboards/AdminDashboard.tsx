@@ -45,10 +45,10 @@ export function AdminDashboard() {
 
   if (view !== 'overview') {
     return (
-      <div className="p-8">
+      <div className="p-4 sm:p-6 lg:p-8">
         <button
           onClick={() => setView('overview')}
-          className="mb-6 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition"
+          className="mb-4 sm:mb-6 px-3 sm:px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition text-sm sm:text-base"
         >
           ← العودة
         </button>
@@ -65,13 +65,13 @@ export function AdminDashboard() {
   }
 
   return (
-    <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">لوحة تحكم المدير</h1>
-        <p className="text-gray-600">مرحباً بك في نظام إدارة مساعدات لجنة زكاة العامرات</p>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">لوحة تحكم المدير</h1>
+        <p className="text-sm sm:text-base text-gray-600">مرحباً بك في نظام إدارة مساعدات لجنة زكاة العامرات</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
         <div className="bg-white rounded-xl shadow-md p-6 border-r-4 border-emerald-500">
           <div className="flex items-center justify-between">
             <div>
@@ -121,7 +121,7 @@ export function AdminDashboard() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
         <button
           onClick={() => setView('users')}
           className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition text-right group"
